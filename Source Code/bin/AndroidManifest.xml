@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.biography"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        
+        <activity
+            android:name="com.example.biography.Biography"
+            android:label="@string/title_activity_biography"
+        	>
+        	 
+        	 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="com.example.biography.Tabs"
+            android:label="@string/app_name"
+            >
+            
+
+        </activity>
+        
+        <activity
+            android:name="com.example.biography.about.AboutPagerActivity"
+            android:label="@string/title_activity_about_pager"
+            >
+            
+         </activity>
+        
+        <activity
+            android:name="com.example.biography.news.NewsPagerActivity"
+            android:label=""
+            >
+            
+        </activity>
+        
+        <activity
+            android:name="com.example.biography.videos.PlayerViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label=""
+            android:screenOrientation="nosensor"
+            >
+            
+            <meta-data
+                android:name="@string/minVersion"
+                android:value="8" />
+            <meta-data
+                android:name="@string/isLaunchableActivity"
+                android:value="true" />
+        </activity>
+    
+    </application>
+
+</manifest>

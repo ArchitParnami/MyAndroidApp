@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/grey"
+    >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:id="@+id/news_child_header"
+        android:orientation="horizontal"
+        android:padding="@dimen/news_child_header_padding"
+        >
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            >
+    	<TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_news_source"
+            android:gravity="left"
+            android:layout_marginRight="@dimen/news_child_margin_right"
+            android:textSize="@dimen/news_child_header_size"
+            />
+		<TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+        	 android:textSize="@dimen/news_child_header_size"
+             android:gravity="center_horizontal"
+             android:id="@+id/news_author"
+			/>        
+            
+        </LinearLayout>
+        
+        
+		        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:id="@+id/tv_news_datetime"
+            android:textSize="@dimen/news_child_header_size"
+            />
+    </LinearLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/news_child_header"
+        android:padding="@dimen/news_child_padding"
+        >
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/news_child_padding"
+            android:background="@color/white"
+            >
+
+			<TextView 
+				android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_alignParentTop = "true"
+            	android:id="@+id/tv_news_title"
+            	android:textStyle="bold"
+            	android:gravity="center_horizontal"
+            	android:textSize="@dimen/news_child_title_size"      
+               />
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_news_title"
+                android:id="@+id/ll_image"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/news_image_top_margin"
+                android:layout_marginBottom="@dimen/news_image_top_margin"
+                >
+                
+                <ImageView
+                    android:contentDescription="@string/image"
+                    android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_gravity="center_horizontal"
+            		android:id="@+id/news_image"	
+                    />
+                
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_image_desc"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/news_author_size"
+                    android:layout_marginTop="@dimen/image_desc_margin"
+                    android:textStyle="italic"
+                    
+                    />
+            </LinearLayout>
+            
+            
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_image"
+                android:id="@+id/tv_description"
+                android:textSize="@dimen/news_text_size"
+                android:gravity="center"
+                />
+            
+           
+        </RelativeLayout>
+        
+    </ScrollView>
+    
+
+</RelativeLayout>

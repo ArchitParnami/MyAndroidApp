@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/news_item_padding"
+     >
+    
+    <ImageView
+        android:contentDescription="@string/image"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:id="@+id/newsImage"
+        android:layout_alignParentLeft="true"
+        />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/news_text_padding"
+        android:layout_toRightOf="@id/newsImage"
+        >
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_title"
+            android:layout_alignParentTop="true"
+     		android:textStyle="bold"
+     		android:textSize="@dimen/news_title_size"
+            />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/news_title"
+            android:orientation="horizontal"     
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_news_date"
+                android:textSize="@dimen/news_date_time_size"
+                android:padding="@dimen/news_date_time_padding"
+                />
+             <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_news_time"
+                android:textSize="@dimen/news_date_time_size"
+                android:padding="@dimen/news_date_time_padding"
+                />
+    
+        </LinearLayout>
+        
+        
+    </RelativeLayout>
+
+</RelativeLayout>

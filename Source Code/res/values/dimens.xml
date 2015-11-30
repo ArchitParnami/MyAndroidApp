@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tv_padded">5dp</dimen>
+    <dimen name="about_item_text_size">20sp</dimen>
+    <dimen name="about_item_pad_left">5dp</dimen>
+    <dimen name="lv_padding">5dp</dimen>
+    <dimen name="award_single_item_padding">5dp</dimen>
+    <dimen name="award_text_size">15sp</dimen>
+	<dimen name="award_text_padding">3dp</dimen>
+	<dimen name="about_list_padding">5dp</dimen>
+	<dimen name="about_child_name_text_size">22sp</dimen>
+	<dimen name="about_tv_padding">10dp</dimen>
+	<dimen name="about_child_content_size">15sp</dimen>
+	<dimen name="news_item_padding">5dp</dimen>
+	<dimen name="news_text_padding">3dp</dimen>
+	<dimen name="news_title_size">15sp</dimen>
+	<dimen name="news_date_time_size">10sp</dimen>
+	<dimen name="news_date_time_padding">2dp</dimen>
+	<dimen name="news_child_header_size">10sp</dimen>
+	<dimen name="news_child_header_padding">3dp</dimen>
+	<dimen name="news_child_padding">5dp</dimen>
+	<dimen name="news_child_title_size">20sp</dimen>
+	<dimen name="news_child_margin_right">2dp</dimen>
+	<dimen name="news_author_size">10sp</dimen>
+	<dimen name="news_image_top_margin">3dp</dimen>
+	<dimen name="news_text_size">15sp</dimen>
+	<dimen name="image_desc_margin">1dp</dimen>
+	<dimen name="video_item_padding">5dp</dimen>
+	<dimen name="video_title_size">15sp</dimen>
+	<dimen name="thumbnail_margin_right">3dp</dimen>
+	<dimen name="duration_text_size">10sp</dimen>
+	<dimen name="videos_child_padding">2dp</dimen>
+	<dimen name="video_child_margin">2dp</dimen>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Biography</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="award">Award</string>
+    <string name="year">Year</string>
+    <string name="givenBy">Given By</string>
+    <string name="image">Image</string>
+    <string name="title_activity_about_pager">AboutPagerActivity</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="title_activity_biography">Biography</string>
+
+</resources>
